@@ -1,10 +1,10 @@
 ﻿namespace BandsMvc.Models
 {
     public class DataService
-    {
+    { 
         private List<Band> Bands = new List<Band>
         {
-            
+            new Band(1, "band" , "new band")
         };
 
         public Band GetBandById(int id)
