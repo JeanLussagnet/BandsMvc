@@ -4,7 +4,7 @@
     {
         private List<Band> Bands = new List<Band>
         {
-            
+            new Band(1, "TestBand", "Bästa bandet")
         };
 
         public Band GetBandById(int id)
