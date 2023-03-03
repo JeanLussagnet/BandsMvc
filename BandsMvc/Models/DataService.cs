@@ -4,7 +4,8 @@
     { 
         private List<Band> Bands = new List<Band>
         {
-                        new Band(1, "band" , "new band")
+            new Band(1, "band" , "new band"),
+            new Band(2, "Band2", "new band2")
 
         };
 
