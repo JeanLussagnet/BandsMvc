@@ -4,9 +4,9 @@
     { 
         private List<Band> Bands = new List<Band>
         {
-            new Band(1, "band" , "new band"),
-            new Band(2, "Band2", "new band2")
-
+            new Band(1, "BestBand" , "Greatest band of all time"),
+            new Band(2, "Creator", "German metal band"),
+            new Band(3, "Deletor", "Austrian metal band")
         };
 
         public Band GetBandById(int id)

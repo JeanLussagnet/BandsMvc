@@ -1,5 +1,5 @@
 ﻿@using BandsMvc.Models;
-@model Band[]
+@model Band
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,10 +9,9 @@
 </head>
 <body>
     <div>
-        @foreach (var item in Model)
-        {
-            <li><a href="details/@item.Id">@item.Name</a></li>
-        }
+        <li>@Model.Id</li>
+        <li>@Model.Name</li>
+        <li>@Model.Description</li>
     </div>
 </body>
 </html>

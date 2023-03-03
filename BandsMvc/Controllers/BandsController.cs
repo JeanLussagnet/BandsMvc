@@ -10,7 +10,15 @@ namespace BandsMvc.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            return View();
+            Band[] bands = dataService.GetAllBands();
+            return View(bands);
+        }
+
+        [HttpGet("details/{id}")]
+        public IActionResult Details(int id)
+        {
+            Band bandById = dataService.GetBandById(id);
+            return View(bandById);
         }
     }
 }
